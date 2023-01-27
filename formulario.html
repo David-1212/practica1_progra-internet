@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Contacto</title>
+
+</head>
+<body>
+    <h2>
+        Contacto:
+    </h2>
+    <form action="formulario.html" method="get"><b>Registrate:</b><br><br>
+<!-Nombre->
+        <label for="name"><b>Nombre:</b></label>
+        <input type="text"name ="username" id="name" name="user_name">
+        <div id="name" class="form-text" > Nombre de usuario</div><br>
+
+<!-Correo->
+        <label for="ejemplo@gmail.com" class="form-label" ><b>Email address</b></label>
+        <input type="email" name="email" placeholder="ejemplo@gmail.com" class="form-control" id="ejemplo@gmail.com" aria-describedby="emailHelp">
+        <div id="ejemplo@gmail.com" class="form-text">Por favor ingresa un correo real.</div><br>
+
+<!-Genero->
+    <label for="genero"><b>Género</b></label>
+    <form >
+        <div class="form-check">
+            <input class="form-check-input" name="genero" type="radio" name="impradio" id="impradio2">
+            <label class="impradio" for="impradio2">Masculino</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="impradio" id="impradio3" checked>
+            <label class="impradio1" for="impradio3">Femenino</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="impradio" id="impradio4" checked>
+            <label class="impradio1" for="impradio4">Otro</label>
+        </div>
+    </form>
+
+<!-contrasena->
+    <div class="form-floating">
+        <label for="Password1" class="form-label"><br><b>Contraseña</b></label>
+        <input type="password" name="password" class="form-control" id="Password1">
+    </div>
+
+<!-Comentario->
+    <div class="form-floating">
+        <label for="floatingTextarea"><br><b>Comentario</b></label><br>
+        <textarea class="form-control" name="comentario" placeholder="Escribe un comentario aqui........." id="floatingTextarea"></textarea>
+    </div>
+
+<!-Lugar->
+    <label for="city"><br><b>Ciudad</b></label><br>
+    <select class="form-select" name="place" aria-label="select-sample">
+        <option selected>Selecciona tu ciudad</option>
+        <option value="1">Guadalajara Jal.</option>
+        <option value="2">Zapopan Jal</option>
+        <option value="3">Tonalá Jal</option>
+        <option value="4">Mascota Jal</option>
+        <option value="3">Jala Jal</option>
+      </select>
+
+<!-contratacion?->
+    <label for="label_pregunta"><br><br><b>¿Desea contratar nuestros servicios?</b></label>
+    <div class="form-check">
+        <input class="form-check-input" nmae="contrato" type="checkbox" value="" id="check-contratacion">
+        <label class="form-check-label" for="flexCheckDefault">
+        SI
+        </label>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" name="contrato" type="checkbox" value="" id="check-contratacion" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+        NO
+        </label>
+    </div> 
+
+<!-Boton_enviar->
+<br><button type="button" name="aceptar" class="btn btn-primary">Enviar</button>
+     
+
+    
+    	
+</body>
+</html>
